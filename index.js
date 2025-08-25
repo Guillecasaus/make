@@ -26,6 +26,7 @@ app.post("/validar-web", (req, res) => {
         tieneWeb: esWebValida ? "Sí" : "No",
         websiteFiltrado: esWebValida ? website : ""
     });
+    console.log(`Validación realizada para: ${website}`);
 });
 
 const PORT = process.env.PORT || 3000;
